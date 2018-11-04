@@ -1,18 +1,19 @@
 import {Routes} from '@angular/router';
+import {LandingPageComponent} from './components/landing-page/landing-page.component';
 
 export const rootRouterConfig: Routes = [
     {
         path: '',
-        redirectTo: 'femob/home',
+        redirectTo: 'femob',
         pathMatch: 'full'
     },
     {
         path: 'femob',
-        loadChildren: './components/landing-page/landing-page.module#LandingPageModule'
+        component: LandingPageComponent
     },
     {
         path: '**',
-        redirectTo: 'femob/home'
+        redirectTo: 'femob'
     }
 ];
 

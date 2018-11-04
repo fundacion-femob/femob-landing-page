@@ -40,9 +40,9 @@
         color: #000000;
     }
     .home-logo {
-        h2 {
-            color: #000;
-            margin: 0;
+        img {
+            width: 150px;
+            height: 40px;
         }
     }
 }
@@ -61,8 +61,9 @@
     a {
         display: inherit;
     }
-    h2 {
-        color: #fff;
+    img {
+        width: 150px;
+        height: 40px;
     }
 }
 

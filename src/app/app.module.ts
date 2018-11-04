@@ -7,6 +7,7 @@ import { rootRouterConfig } from './app.routes';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
+import {LandingPageModule} from './components/landing-page/landing-page.module';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { environment } from '../environments/environment';
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
+    LandingPageModule,
     RouterModule.forRoot(rootRouterConfig, { useHash: false }),
     AngularFireModule.initializeApp(environment.firebase, 'femob-landing-page')
   ],

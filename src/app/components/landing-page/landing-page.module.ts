@@ -18,22 +18,21 @@ import {
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {NguCarouselModule} from '@ngu/carousel';
 import {SharedModule} from '../../shared/shared.module';
-import {LandingPageRoutes} from './landing-page.routing';
 
 import {LandingPageComponent} from './landing-page.component';
-import {HeaderComponent} from '../shared-sections/header/header.component';
-import {IntroOneComponent} from '../shared-sections/intro-one/intro-one.component';
-import {IntroTwoComponent} from '../shared-sections/intro-two/intro-two.component';
-import {PortfolioComponent} from '../shared-sections/portfolio/portfolio.component';
-import {ServicesComponent} from '../shared-sections/services/services.component';
-import {CtaComponent} from '../shared-sections/cta/cta.component';
-import {PricingsComponent} from '../shared-sections/pricings/pricings.component';
-import {ContactComponent} from '../shared-sections/contact/contact.component';
-import {FooterComponent} from '../shared-sections/footer/footer.component';
-import {TestimonialsComponent} from '../shared-sections/testimonials/testimonials.component';
-import {PortfolioCarouselComponent} from '../shared-sections/portfolio-carousel/portfolio-carousel.component';
-import {TestimonialsCarouselComponent} from '../shared-sections/testimonials-carousel/testimonials-carousel.component';
-import {ServicesCarouselComponent} from '../shared-sections/services-carousel/services-carousel.component';
+import {HeaderComponent} from '../sections/header/header.component';
+import {IntroOneComponent} from '../sections/intro-one/intro-one.component';
+import {IntroTwoComponent} from '../sections/intro-two/intro-two.component';
+import {PortfolioComponent} from '../sections/portfolio/portfolio.component';
+import {ServicesComponent} from '../sections/services/services.component';
+import {CtaComponent} from '../sections/cta/cta.component';
+import {PricingsComponent} from '../sections/pricings/pricings.component';
+import {ContactComponent} from '../sections/contact/contact.component';
+import {FooterComponent} from '../sections/footer/footer.component';
+import {TestimonialsComponent} from '../sections/testimonials/testimonials.component';
+import {PortfolioCarouselComponent} from '../sections/portfolio-carousel/portfolio-carousel.component';
+import {TestimonialsCarouselComponent} from '../sections/testimonials-carousel/testimonials-carousel.component';
+import {ServicesCarouselComponent} from '../sections/services-carousel/services-carousel.component';
 
 import {WINDOW_PROVIDERS} from '../../shared/helpers/window.helper';
 
@@ -57,7 +56,7 @@ import {WINDOW_PROVIDERS} from '../../shared/helpers/window.helper';
         MatTabsModule,
         FlexLayoutModule,
         NguCarouselModule,
-        RouterModule.forChild(LandingPageRoutes)
+        RouterModule
     ],
     declarations: [
         LandingPageComponent,
