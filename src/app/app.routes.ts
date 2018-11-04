@@ -3,16 +3,16 @@ import {Routes} from '@angular/router';
 export const rootRouterConfig: Routes = [
     {
         path: '',
-        redirectTo: 'layout/one',
+        redirectTo: 'femob/home',
         pathMatch: 'full'
     },
     {
-        path: 'layout',
+        path: 'femob',
         loadChildren: './layouts/layout.module#LayoutModule'
     },
     {
         path: '**',
-        redirectTo: 'layout/one'
+        redirectTo: 'femob/home'
     }
 ];
 
