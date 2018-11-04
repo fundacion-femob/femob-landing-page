@@ -8,6 +8,7 @@ firebase-debug.log*
 *.idea
 **/workspace.xml
 package-lock.json
+dist
 
 # Firebase cache
 .firebase/

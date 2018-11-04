@@ -8,7 +8,7 @@ export const rootRouterConfig: Routes = [
     },
     {
         path: 'femob',
-        loadChildren: './layouts/layout.module#LayoutModule'
+        loadChildren: './components/landing-page/landing-page.module#LandingPageModule'
     },
     {
         path: '**',
